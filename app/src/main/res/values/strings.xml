@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Maloga</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_register">Register</string>
+
+    //Carnet
+    <string name="nom">NULL</string>
+    <string name="distance">NULL</string>
+    <string name="durée">NULL</string>
+
+    //key
+    <string name="bing_key">AjbhTDB-DVc9L70P4sMSt0reLPPOQR0YeadiU3i64R7gkS31M04tyn6-tn8bKyJW</string>
+    <string name="meteo_key">0a6da75e330414b4614e94c15b6a2c86</string>
+
+
+    <string-array name="spinner">
+        <item>Null</item>
+    </string-array>
+
+</resources>

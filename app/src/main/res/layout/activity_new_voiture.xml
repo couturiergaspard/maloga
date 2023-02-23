@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_voiture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@color/theme1"
+    android:scrollbarSize="4dp"
+    tools:context=".volant.Volant">
+
+    <Button
+        android:id="@+id/volant"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:layout_marginBottom="5dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/new_volant" />
+
+    <Button
+        android:id="@+id/geo_start"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:alpha="0.5"
+        android:clickable="false"
+        android:background="@drawable/base"
+        app:layout_constraintBottom_toTopOf="@+id/volant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:src="@mipmap/ic_launcher_round" />
+
+    <Spinner
+        android:id="@+id/decor"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:entries="@array/spinner"
+        android:popupBackground="@color/colorText1"
+        app:layout_constraintBottom_toTopOf="@+id/volant"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geo_start"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/button_new"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/plus"
+        android:alpha="0.5"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/decor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/decor"
+        app:layout_constraintTop_toTopOf="@+id/decor" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent50_1"
+        android:id="@+id/activity_new_voiture_2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/layout_new_voiture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_nouv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/Text_Medium"
+            android:text="Nouvelle voiture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Entrez le nom de votre voiture"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/Text_Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_nouv"
+            app:layout_constraintTop_toBottomOf="@+id/text_nouv" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/confirm"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

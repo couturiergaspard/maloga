@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201800972232",
+    "firebase_url": "https://maloga-gps-9b80a.firebaseio.com",
+    "project_id": "maloga-gps-9b80a",
+    "storage_bucket": "maloga-gps-9b80a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201800972232:android:421179971862d3fa1572fd",
+        "android_client_info": {
+          "package_name": "com.maloga.maloga_gps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201800972232-uiin96q88vnp4mm1a7u8b3odi63f9tbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maloga.maloga_gps",
+            "certificate_hash": "a9a85bea17d6da9682444a7aa9a012843c59cf89"
+          }
+        },
+        {
+          "client_id": "201800972232-4nuclag1eu8la72fcfkmf0vjb1ogpie5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRE2-rSCaOhVReByZrzUhcBMQtM6FV4t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201800972232-4nuclag1eu8la72fcfkmf0vjb1ogpie5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

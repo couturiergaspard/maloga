@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme1"
+    android:id="@+id/activity_information_compte"
+    tools:context=".param.information_compte">
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textvoiture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Voiture : "
+                    android:textAppearance="@style/Text_Medium"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@+id/textMdp"
+                    app:layout_constraintTop_toBottomOf="@+id/textMdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_voiture"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/spinner"
+                    android:popupBackground="@color/colorText1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textvoiture" />
+
+                <Button
+                    android:id="@+id/button_del_voiture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/delete"
+                    app:layout_constraintBottom_toBottomOf="@+id/spinner_voiture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spinner_voiture"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_voiture" />
+
+                <TextView
+                    android:id="@+id/textMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/mail_input"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:text="xxxxx@gmail.com"
+                    android:textColor="#FFFFFF"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/textMdp"
+                    app:layout_constraintStart_toStartOf="@+id/textMail"
+                    app:layout_constraintTop_toBottomOf="@+id/textMail" />
+
+                <TextView
+                    android:id="@+id/textMdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modifier votre mot de passe"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mail_input"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <Button
+                    android:id="@+id/changeMdpButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/change_password"
+                    app:layout_constraintBottom_toBottomOf="@+id/textMdp"
+                    app:layout_constraintEnd_toEndOf="@+id/changeMailButton"
+                    app:layout_constraintStart_toStartOf="@+id/changeMailButton"
+                    app:layout_constraintTop_toTopOf="@+id/textMdp" />
+
+                <Button
+                    android:id="@+id/changeMailButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/email"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/mail_input"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mail_input"
+                    app:layout_constraintTop_toTopOf="@+id/mail_input" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maloga.maloga_gps">
+    <!-- L'application requiert certaines permissions spécifiques, elles sont cités dessous -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/maloga_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/maloga_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<<<<<<< HEAD
+        <activity android:name=".meteo.Meteo"></activity>
+=======
+        <activity android:name=".param.information_notification"></activity>
+        <!--
+         Toutes les activités de l'application sont décrites ci-dessous
+         PS : L'application est vérrouillé en mode portrait sur chacunes des fenêtres
+        -->
+>>>>>>> feature/Louis
+        <activity
+            android:name=".volant.new_voiture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.a_propos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.information_compte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.information_trajets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".carnet.Interieur_trajet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".carnet.activity_new_trajet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".carnet.Carnet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".connexion.Register"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".localisation.Map"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".connexion.Login"
+            android:screenOrientation="portrait" />
+        <!--
+ Voici l'activité principale de l'application,
+        elle comporte donc deux paramètres en plus,
+        un pour la déclarer comma "activity_main" l'autre pour la lancer au démarage.
+        -->
+        <activity
+            android:name=".splash.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".volant.Volant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".param.Parametre"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
