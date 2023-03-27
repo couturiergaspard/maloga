@@ -1,6 +1,5 @@
 # maloga
 
-1) Introduction.
 A - Why this project.
 In accompanied driving, to note all the kilometers on a notebook becomes quickly a recurring task and which is limited very quickly to the size of the notebook that the driving school puts at our disposal.
 The idea is therefore the following:
